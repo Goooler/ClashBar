@@ -172,11 +172,6 @@ jobs:
         with:
           ref: ${{ needs.prepare-version.outputs.tag }}
 
-      - name: Select Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: latest-stable
-
       - name: Verify Swift toolchain
         shell: bash
         run: |
